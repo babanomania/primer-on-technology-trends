@@ -1,1 +1,8 @@
-/target/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+.settings/
+.recommenders/
+.metadata/

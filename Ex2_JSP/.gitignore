@@ -1,7 +1,2 @@
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-.settings/
-RemoteSystemsTempFiles
+.metadata/
+.recommenders/
