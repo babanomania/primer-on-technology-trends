@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>John Lenon Quotes</title>
+
+		<script>
+
+			var quotes = {
+							life : "Life is what happens to you while you're busy making other plans.", 
+							sream : "A dream you dream alone is only a dream. A dream you dream together is reality.",
+							happiness : "When I was 5 years old, my mother always told me that happiness was the key to life. When I went to school, they asked me what I wanted to be when I grew up. I wrote down 	‘happy’. They told me I didn’t understand the assignment, and I told them they didn’t understand life.",
+							friendship: "Count your age by friends, not years. Count your life by smiles, not tears."
+						};
+
+			function displayQuote(obj) {
+
+			    var type = obj.options[ obj.selectedIndex ].value;
+			    var selectedQuote = quotes[type];
+
+			    document.getElementById("quote").innerHTML = selectedQuote;
+			}
+
+		</script>
+
+		<style>
+			.quote{
+				color: #666666;
+				font-size: 28px; 
+				font-weight: 100 
+				text-align:right; 
+				padding-right: 30px;
+				padding-top: 30px;
+				padding-left: 30px;
+				padding-bottom: 30px;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<h1>John Lenon Quotes</h1>
+		<hr/>
+
+		<br/><br/>
+		<span id="quote" class="quote"></span>
+      	<br/><br/>
+
+		 <select id="type" onChange="displayQuote(this);">
+			  <option value="life">Life</option>
+			  <option value="dream">Dream</option>
+			  <option selected value="happiness">Happiness</option>
+			  <option value="friendship">Friendship</option>
+		 </select> 
+
+		 <script>
+
+		 	var all_types = document.getElementById("type")
+		 	displayQuote(all_types);
+
+		 </script>
+
+	<body>
+
+
+</html>
