@@ -1,0 +1,24 @@
+package com.babanomania.primertech;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
+
+public class QuotesDB {
+
+	private Map<String, String> quotesByType = new HashMap<String, String>();
+	
+	private void init() throws IOException {
+		
+		InputStream isQuotes = ClassLoader.getSystemResourceAsStream("quotes.properties");
+		
+		Properties propQuotes = new Properties();
+		propQuotes.load(isQuotes);
+		
+		for (final String quoteType: propQuotes.stringPropertyNames())
+		    map.put(name, propQuotes.getProperty(name));
+	}
+	
+}

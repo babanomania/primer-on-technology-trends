@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+/Users/Shouvik/Documents/workspace/primer-on-technology-trends/Ex2_JSP/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2213851890.index
+102658603.index
+1077059508.index
+697962526.index
+2291727068.index
+3546262279.index
