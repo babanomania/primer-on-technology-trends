@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+      
+	<h:head>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+			<title>John Lennon Quotes</title>
+				
+			<style>
+				.quote{
+					color: #666666;
+					font-size: 28px; 
+					font-weight: 100 
+					text-align:right; 
+					padding-right: 30px;
+					padding-top: 30px;
+					padding-left: 30px;
+					padding-bottom: 30px;
+				}
+			</style>
+			
+	</h:head>
+
+	<h:body>
+	
+		<h1>John Lennon Quotes</h1>
+		<hr/>
+		<br/><br/>
+		
+		<h:form id="mainForm">
+		
+			<span id="quote" class="quote">#{quotes.quoteTxt}</span>
+	      	<br/><br/>
+	
+			<h:selectOneMenu value="#{quotes.quoteType}">
+				<f:selectItems value="#{quotes.allQuoteTypes}" />
+			</h:selectOneMenu>
+			
+			&nbsp;
+			<h:commandButton value="submit" type="submit" action="#{quotes.getQuote}" />
+	
+		</h:form>
+	
+	</h:body>
+
+</html>
