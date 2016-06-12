@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>John Lennon - Quotes</title>
+		<script	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+		<script	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular-resource.js"></script>
+		<script src="js/controller.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body ng-app="quote-app">
+
+		<h1>John Lennon Quotes</h1>
+		<hr/>
+		
+		<div ng-controller="quotes" >
+		
+			<br/><br/>
+			<span class="quote">{{quotes_db.quote}}</span>
+	      	<br/><br/>
+			
+			<select class="type" 
+				ng-options="option for option in type_data"
+				ng-change="show_quote()"
+				ng-model="type">
+			</select>
+			
+		</div>
+
+	</body>
+	
+</html>
